@@ -16,7 +16,7 @@ function setBannerViewPort() {
 }
 
 function getRandom(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 function randomCircle() {
@@ -31,7 +31,7 @@ function randomCircle() {
   window.setTimeout(function () {
     const posX = getRandom(0, viewportWidth)
     const posY = getRandom(0, viewportHeight)
-    $('#'+id).css({
+    $('#' + id).css({
       left: posX + 'px',
       top: posY + 'px',
       height: viewportHeight * 2,
@@ -50,7 +50,7 @@ $(window).on('load', function () {
   setTimeout(function () {
     window.clearInterval(id)
     $('.peru').text('Pritam Parker')
-    $('.seira-vela').text('UI & UX Developer')
+    $('.seira-vela').text('JavaScript Developer')
     $('body').css('overflow', 'auto')
     $('.rendu').css('display', 'block')
     $('.down').css('opacity', 1)
