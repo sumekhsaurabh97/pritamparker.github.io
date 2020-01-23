@@ -1,44 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Pritam Parker">
-    <meta name="description" content="Pritam Parker's personal website | UI Designer & Full-Stack Developer">
-    <meta content="Pritam Parker" property="og:site_name">
-    <meta content="Pritam Parker" property="og:title">
-    <meta content="Pritam Parker's personal website | UI Designer & Full-Stack Developer" property="og:description">
-    <meta content="website" property="og:type">
-    <meta content="http://pritamparker.com" property="og:url">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Pritam Parker" />
+    <meta
+      name="description"
+      content="Pritam Parker's personal website | UI Designer & Full-Stack Developer"
+    />
+    <meta content="Pritam Parker" property="og:site_name" />
+    <meta content="Pritam Parker" property="og:title" />
+    <meta
+      content="Pritam Parker's personal website | UI Designer & Full-Stack Developer"
+      property="og:description"
+    />
+    <meta content="website" property="og:type" />
+    <meta content="http://pritamparker.com" property="og:url" />
     <meta content="img/banner.png" property="og:image" />
-    <meta name="theme-color" content="#6356E5">
-    <meta name="msapplication-navbutton-color" content="#6356E5">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#6356E5">
+    <meta name="theme-color" content="#6356E5" />
+    <meta name="msapplication-navbutton-color" content="#6356E5" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#6356E5" />
     <title>Pritam Parker</title>
     <link rel="shortcut icon" type="image/png" href="img/logo.png" />
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css" />
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-      <![endif]-->
-</head>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
 
-<body>
+  <body>
     <div class="vetti-scene">
-        <div class="peru"></div>
-        <div class="seira-vela"></div>
-        <a href="#about" data-scroll>
-            <div class="down">
-                <img src="img/down.svg" alt="">
-            </div>
-        </a>
+      <div class="peru"></div>
+      <div class="seira-vela"></div>
+      <a href="#about" data-scroll>
+        <div class="down">
+          <img src="img/down.svg" alt="" />
+        </div>
+      </a>
     </div>
-    <div class="rendu">
+    <!-- <div class="rendu">
         <header class="hidden-xs hidden-sm hidden-md">
             <img src="img/logo.svg" alt="">
         </header>
@@ -285,43 +290,44 @@
                 <a href="https://medium.com/@Pritam_parker" id="me" class="fancy">Medium</a>
             </div>
         </footer>
-    </div>
+    </div> -->
     <script>
-        function setBannerViewPort() {
-            document.querySelector('.vetti-scene').style.height = window.innerHeight + 'px'
-        }
+      function setBannerViewPort() {
+        document.querySelector('.vetti-scene').style.height =
+          window.innerHeight + 'px';
+      }
 
-        function randomString(len, charSet) {
-            charSet = charSet || 'abcdefghijklmnopqrstuiwxyz&';
-            var randomString = '';
-            for (var i = 0; i < len; i++) {
-                var randomPoz = Math.floor(Math.random() * charSet.length);
-                randomString += charSet.substring(randomPoz, randomPoz + 1);
-            }
-            return randomString;
+      function randomString(len, charSet) {
+        charSet = charSet || 'abcdefghijklmnopqrstuiwxyz&';
+        var randomString = '';
+        for (var i = 0; i < len; i++) {
+          var randomPoz = Math.floor(Math.random() * charSet.length);
+          randomString += charSet.substring(randomPoz, randomPoz + 1);
         }
+        return randomString;
+      }
 
-        function loading() {
-            var randomStr = randomString(7)
-            var randomStr1 = randomString(4)
-            var randomStr2 = randomString(34)
-            document.querySelector('.peru').innerText = randomStr + ' ' + randomStr1
-            document.querySelector('.seira-vela').innerText = randomStr2
-        }
-        setBannerViewPort()
-        var id = window.setInterval(loading, 200)
+      function loading() {
+        var randomStr = randomString(7);
+        var randomStr1 = randomString(4);
+        var randomStr2 = randomString(34);
+        document.querySelector('.peru').innerText =
+          randomStr + ' ' + randomStr1;
+        document.querySelector('.seira-vela').innerText = randomStr2;
+      }
+      setBannerViewPort();
+      var id = window.setInterval(loading, 200);
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/10.2.1/js/smooth-scroll.min.js"></script>
     <script>
-        smoothScroll.init({
-            offset: 150,
-        });
+      smoothScroll.init({
+        offset: 150
+      });
     </script>
     <script>
-      window.postMessage("Sending data from WebView");
+      window.postMessage('Sending data from WebView');
     </script>
-</body>
-
+  </body>
 </html>
