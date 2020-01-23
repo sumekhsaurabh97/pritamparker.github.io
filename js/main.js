@@ -55,7 +55,7 @@ $(window).on('load', function() {
   setTimeout(function() {
     window.clearInterval(id);
     $('.peru').text('Lakshita Rajput');
-    $('.seira-vela').text('Accept My Instagram Request :)');
+    $('.seira-vela').text('Please Accept My Instagram Request :)');
     $('body').css('overflow', 'auto');
     $('.rendu').css('display', 'block');
     $('.down').css('opacity', 1);
