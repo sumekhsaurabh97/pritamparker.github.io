@@ -54,8 +54,8 @@ $(window).on('load', function() {
   $('.percentage-container').addClass('no-width');
   setTimeout(function() {
     window.clearInterval(id);
-    $('.peru').text('Lakshita Rajput');
-    $('.seira-vela').text('Please Accept My Instagram Request :)');
+    $('.peru').text('Pritam Parker');
+    $('.seira-vela').text('JavaScript Developer');
     $('body').css('overflow', 'auto');
     $('.rendu').css('display', 'block');
     $('.down').css('opacity', 1);
