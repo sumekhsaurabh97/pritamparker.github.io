@@ -54,8 +54,8 @@ $(window).on('load', function() {
   $('.percentage-container').addClass('no-width');
   setTimeout(function() {
     window.clearInterval(id);
-    $('.peru').text('Neiki');
-    $('.seira-vela').text('I miss you');
+    $('.peru').text('Pritam Parker');
+    $('.seira-vela').text('Javascript Deveoper');
     $('body').css('overflow', 'auto');
     $('.rendu').css('display', 'block');
     $('.down').css('opacity', 1);
